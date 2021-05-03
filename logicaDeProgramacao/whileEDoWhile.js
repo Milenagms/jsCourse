@@ -6,7 +6,7 @@
 // }
 
 function random(min, max){
-  const r =Math.random() * (max - min) + min;
+  const r = Math.random() * (max - min) + min;
   return Math.floor(r); 
 }
 
