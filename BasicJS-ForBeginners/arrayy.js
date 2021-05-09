@@ -28,5 +28,6 @@ console.log(removido);
 */
 
 /* PARA FATIAR E PEGAR OS ITENS QUE DETERMINOU
-console.log(alunos.slice(0,-2));
+
 */
+console.log(alunos.slice(0,-2));
