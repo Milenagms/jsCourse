@@ -17,4 +17,4 @@ const p1 = new Pessoa('Marie', 'Dantra');
 const p2 = new Pessoa('Milla', 'Costa');
 
 console.log(p1.nome);
-p2.metodo();0
+p2.metodo();
