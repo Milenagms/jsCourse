@@ -24,12 +24,12 @@ console.log(name1)
 
 console.log("#####################################");
 
-const idades = pessoas. map(obj => ({ idade: obj.idade}));
+const idades = pessoas.map(obj => ({ idade: obj.idade}));
 console.log(idades);
 
 console.log("#####################################");
 
-const addIds = pessoas. map(function(obj, indice){
+const addIds = pessoas.map(function(obj, indice){
   const newObj = {...obj}; // para não alterar pessoas, tem que fazer uma cópia de pessoas.
   newObj.id = indice + 1;
 
