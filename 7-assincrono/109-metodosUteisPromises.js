@@ -62,7 +62,7 @@ function baixaPagina(){
   const emCache = true;
 
   if(emCache){
-    return Promise.resolve('Página em cache');
+    return Promise.resolve('Página em cache'); //para se tornar reject subtstitui po resolve por ela
   }else{
     return esperaAi('baixei a página', 3000);
   }
