@@ -5,23 +5,23 @@
 // Promise.reject = toda vez que coloca um reject ele cai no catch
 
 
-function rand (min, max){
+function rand(min, max) {
   min *= 1000;
   max *= 1000;
   return Math.floor(Math.random() * (max - min) + min);
 }
 
-function esperaAi(msg, tempo){
-  return new Promise((resolve, reject) =>   {
-    if(typeof msg !== 'string'){
-     reject(false);
-     return;
+function esperaAi(msg, tempo) {
+  return new Promise((resolve, reject) => {
+    if (typeof msg !== 'string') {
+      reject(false);
+      return;
     }
 
     setTimeout(() => {
       resolve(msg.toUpperCase() + ' - passei na promise');
     }, tempo);
-  }); 
+  });
 }
 
 /*Promise.all 
@@ -58,12 +58,12 @@ Promise.race(promises)
   });
 */
 
-function baixaPagina(){
+function baixaPagina() {
   const emCache = true;
 
-  if(emCache){
+  if (emCache) {
     return Promise.resolve('Página em cache'); //para se tornar reject subtstitui po resolve por ela
-  }else{
+  } else {
     return esperaAi('baixei a página', 3000);
   }
 }
